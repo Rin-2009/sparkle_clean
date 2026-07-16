@@ -1,0 +1,26 @@
+body.dark {
+  margin: 0;
+  overflow-x: hidden;
+  color: #d1d5db;
+  background: linear-gradient(250deg, #0e1b27, rgb(11, 11, 27));
+  border-color: #374151;
+  background-size: 400% 400%;
+}
+
+body.light {
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale body;
+  background-color: rgb(219, 219, 219);
+}
+
+body.light .navbar a {
+  color: white !important;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}

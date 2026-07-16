@@ -1,0 +1,26 @@
+.container-fluid {
+  background: rgb(8, 8, 24);
+  border-bottom: 1px solid rgb(68, 68, 68);
+}
+
+.nav-list {
+  line-height: 3;
+  @media (max-width: 768px) {
+    display: block !important;
+  }
+}
+
+.nav-list a {
+  color: #c7c6c6 !important;
+}
+
+.nav-list a:hover {
+  color: #01f18d !important;
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px !important;
+}
+
