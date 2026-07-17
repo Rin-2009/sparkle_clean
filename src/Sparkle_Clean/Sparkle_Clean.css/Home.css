@@ -1,8 +1,9 @@
 .home {
   padding-top: 70px;
   margin: 10px auto;
+  padding: 115px 50px !important;
   @media (max-width: 768px) {
-    padding: 20px 30px;
+    padding: 60px 20px !important;
   }
 }
 
@@ -51,7 +52,6 @@ body.light .dot {
 }
 
 body.light .home h1 {
-  font-size: 40px;
   background: -webkit-linear-gradient(#088a4d, #1a8561);
   -webkit-background-clip: text;
   font-size: 65px;
@@ -171,13 +171,13 @@ body.light .tags {
 }
 
 .btn:nth-child(2):hover {
-  background-color: #14974b81 !important;
+  background-color: #14977081 !important;
   color: white;
 }
 
 .tags {
   display: flex;
-  gap: 60px;
+  gap: 4rem !important;
   font-size: 14px;
   text-align: center;
   color: rgba(255, 255, 255, 0.644);
@@ -205,51 +205,57 @@ body.light .tags {
 
 .n-1 {
   color: rgb(214, 213, 213) !important;
-  background-color: rgb(58, 148, 134) !important;
+  background-color: rgba(255, 255, 255, 0.055) !important;
   padding: 5px 15px;
-  border-radius: 10px;
+  border-radius: 999px;
   text-decoration: none;
   font-weight: 900;
   font-size: 14px;
   border: none;
+  border: 1px solid rgb(43, 202, 168);
 }
 
 .n-2 {
   color: rgb(255, 255, 255) !important;
-  background-color: rgb(58, 148, 134) !important;
+  background-color: rgba(255, 255, 255, 0.055) !important;
   padding: 6px 12px;
-  border-radius: 10px;
+  border-radius: 999px;
   text-decoration: none;
   font-weight: 900;
   border: none;
+  border: 1px solid rgb(43, 202, 168);
 }
 
 .btn-plans {
   color: rgb(255, 255, 255) !important;
-  background-color: #161320 !important;
+  background-color: #0b071a !important;
   border-radius: 10px;
   text-decoration: none;
-  padding: 8px;
   border: none;
   width: 120px;
-  border-radius: 10px;
+  border-radius: 25px;
 }
 
 .bp {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
-  @media (max-width: 768px) {
-    display: grid !important;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 992px) {
+  .bp {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 30px;
+    gap: 30px !important;
   }
 }
 
-@media (max-width:981px) {
-  .badges {
-    display: grid !important;
+@media (max-width: 1200px) {
+  .bp {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 30px;
+    gap: 30px !important;
+  }
+
+  .c-2 {
+    margin-top: 100px !important;
   }
 }
 
@@ -288,25 +294,121 @@ input[type="range"]::-webkit-slider-thumb:hover {
 }
 
 .badges {
-  margin-top: 100px;
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
-  gap: 50px;
-  align-items: center;
-  text-align: center;
-  @media (max-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 30px;
-  }
+  background-color: #090b18;
 }
 
 .badges h6 {
-  font-family: monospace !important;
-  margin-top: 15px;
+  color: rgb(202, 200, 200) !important;
+  font-size: 13px;
 }
 
 .badges p {
-  color: rgba(255, 255, 255, 0.575);
-  font-size: 12px;
+  font-size: 11px;
+}
+
+/* أضف هذه التعديلات أسفل ملفك */
+
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.home {
+  padding-top: 70px;
+}
+
+.c-1 h1 {
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  line-height: 1.1;
+}
+
+.c-1 h2 {
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
+}
+
+.c-1 p {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.8;
+}
+
+.tags {
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn-plans {
+  width: 100%;
+  min-height: 52px;
+}
+
+.bp {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.tags :hover {
+  color: #0dc47e !important;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 20px 15px;
+  }
+
+  .bp {
+    grid-template-columns: 1fr;
+  }
+
+  .tags {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .card {
+    padding: 1.2rem !important;
+  }
+}
+
+.numbers {
+  padding: 30px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(252, 252, 249, 0.171);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+.numbers div h3 {
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(1, 202, 152);
+  @media (max-width: 912px) {
+    font-size: 35px !important;
+  }
+}
+
+.numbers div p {
+  font-size: 13px;
 }

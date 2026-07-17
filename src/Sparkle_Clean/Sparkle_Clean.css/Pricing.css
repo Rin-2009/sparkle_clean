@@ -1,0 +1,110 @@
+.pricing {
+  padding: 100px 30px !important;
+  background-color: rgb(11, 10, 20);
+}
+
+.texts {
+  background-color: rgb(33, 33, 46);
+  padding: 25px !important;
+  margin-bottom: 30px;
+  border-radius: 30px;
+}
+
+.texts span {
+  text-align: center;
+  color: rgb(3, 233, 175);
+  margin-bottom: 15px;
+  font-size: large;
+  font-weight: 500;
+}
+
+.texts p {
+  color: rgb(209, 209, 209);
+  text-align: center;
+  font-size: 14px;
+}
+
+.texts h2 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.texts b {
+  color: rgb(204, 198, 198);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.blocks {
+  padding: 16px;
+}
+
+.block {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 17px;
+}
+
+.block svg {
+  color: rgb(3, 182, 122);
+}
+
+.texts button {
+  background-color: rgb(11, 156, 108);
+  color: rgb(255, 254, 253);
+}
+
+.texts button:hover {
+  background-color: rgba(0, 255, 153, 0.089);
+  color: rgb(255, 254, 253);
+}
+
+.most {
+  border: 2px solid aquamarine;
+  position: relative;
+}
+
+.most em {
+  position: absolute;
+  background-color: rgb(10, 197, 141);
+  padding: 5px 12px;
+  border-radius: 50px;
+  top: -3%;
+  left: 33%;
+  color: white;
+}
+
+.titles-pricing {
+  text-align: center;
+  margin-bottom: 100px !important;
+}
+
+.titles-pricing span {
+  background-color: rgba(0, 255, 213, 0.322);
+  padding: 8px 15px;
+  border-radius: 50px;
+  color: rgb(3, 247, 206);
+  font-weight: 500;
+}
+
+.titles-pricing h1 {
+  font-size: 50px !important;
+  margin-top: 25px;
+  @media (max-width: 768px) {
+    font-size: 30px !important;
+    margin-bottom: 20px;
+  }
+}
+
+.titles-pricing p {
+  color: rgba(255, 255, 255, 0.692);
+  font-size: 16px;
+}
+
+.block small {
+  font-size: 14px;
+}

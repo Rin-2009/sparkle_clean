@@ -22,5 +22,10 @@
   display: flex;
   gap: 20px;
   padding: 0 20px !important;
+  align-items: center !important;
 }
 
+.i-mode {
+  background-color: rgba(245, 222, 179, 0);
+  border: 0;
+}

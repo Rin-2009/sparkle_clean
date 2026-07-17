@@ -1,0 +1,50 @@
+.services {
+  background-color: rgba(18, 18, 29, 0.514);
+  padding: 100px 30px;
+  margin: 10px auto;
+}
+
+.titles-services {
+  text-align: center;
+  padding: 30px;
+}
+
+.titles-services span {
+  background-color: rgba(0, 255, 255, 0.26);
+  padding: 8px 15px;
+  border-radius: 50px;
+  color: rgb(3, 247, 206);
+  font-weight: 500;
+}
+
+.titles-services h1 {
+  font-size: 50px !important;
+  margin-top: 25px;
+  @media (max-width: 768px) {
+    font-size: 30px !important;
+    margin-bottom: 20px;
+  }
+}
+
+.card-service svg {
+  background-color: rgba(7, 206, 139, 0.274);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.card-service {
+  background-color: rgba(41, 41, 66, 0.589);
+  padding: 35px !important;
+  border-radius: 15px;
+  height: 250px;
+}
+
+.card-service h4 {
+  color: azure;
+  margin-top: 15px;
+}
+
+.card-service p {
+  color: rgba(255, 255, 255, 0.692);
+  font-size: 14px;
+}
