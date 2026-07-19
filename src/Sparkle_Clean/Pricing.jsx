@@ -6,15 +6,15 @@ function Pricing() {
       <section className="pricing" id="pricing">
         <div className=" container-xxl">
           <div className="titles-pricing mb-5">
-            <span>Pricing</span>
-            <h1>Simple, Transparent Pricing</h1>
+            <span>Packages</span>
+            <h1>Choose Your Clean</h1>
             <p>
-              Every plan includes eco-friendly products, insured cleaners, and
-              our satisfaction guarantee.
+              Transparent pricing with no hidden fees. Pick the package that
+              fits your needs and budget.
             </p>
           </div>
-          <div className=" row gx-2 gy-3">
-            <div className="col-md-12 col-lg-3 col-sm-12">
+          <div className=" row gx-4 gy-4">
+            <div className="col-md-6 col-lg-3 col-sm-12">
               <div className="texts card">
                 <span>Basic</span>
                 <p>Regular maintenance cleaning</p>
@@ -140,7 +140,7 @@ function Pricing() {
               </div>
             </div>
 
-            <div className="col-md-12 col-lg-3 col-sm-12">
+            <div className="col-md-6 col-lg-3 col-sm-12">
               <div className="texts most card">
                 <em>Most Popular</em>
                 <span>Standard</span>
@@ -267,7 +267,7 @@ function Pricing() {
               </div>
             </div>
 
-            <div className="col-md-12 col-lg-3 col-sm-12">
+            <div className="col-md-6 col-lg-3 col-sm-12">
               <div className="texts card">
                 <span>Premium</span>
                 <p>Complete top-to-bottom service</p>
@@ -393,7 +393,7 @@ function Pricing() {
               </div>
             </div>
 
-            <div className="col-md-12 col-lg-3 col-sm-12">
+            <div className="col-md-6 col-lg-3 col-sm-12">
               <div className="texts card">
                 <span>Commercial</span>
                 <p>Tailored to your business</p>

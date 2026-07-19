@@ -1,5 +1,12 @@
 import "./Sparkle_Clean.css/Home.css";
 import { useState, useEffect } from "react";
+import Services from "./Services";
+import Pricing from "./Pricing";
+import Results from "./Results";
+import Reviews from "./Reviews";
+import FAQ from "./FAQ";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 function Home() {
   const text_list = [
@@ -401,6 +408,13 @@ function Home() {
           </div>
         </div>
       </section>
+      <Services />
+      <Pricing />
+      <Results />
+      <Reviews />
+      <FAQ />
+      <Contact />
+      <Footer />
     </>
   );
 }

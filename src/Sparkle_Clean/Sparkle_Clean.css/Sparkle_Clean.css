@@ -18,6 +18,19 @@ body.light .navbar a {
   color: white !important;
 }
 
+body.dark .navbar {
+  padding: 0 !important;
+}
+
+body.light .navbar {
+  padding: 0 !important;
+}
+
+body.light section {
+  background-color: aliceblue;
+  margin: 0;
+}
+
 html,
 body {
   overflow-x: hidden !important;

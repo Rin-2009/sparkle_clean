@@ -4,16 +4,15 @@
 }
 
 .texts {
-  background-color: rgb(33, 33, 46);
   padding: 25px !important;
-  margin-bottom: 30px;
   border-radius: 30px;
+  background-color: rgb(15, 15, 32);
 }
 
 .texts span {
   text-align: center;
   color: rgb(3, 233, 175);
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-size: large;
   font-weight: 500;
 }
@@ -28,12 +27,11 @@
   color: white;
   text-align: center;
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .texts b {
   color: rgb(204, 198, 198);
-  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -54,18 +52,19 @@
 }
 
 .texts button {
-  background-color: rgb(11, 156, 108);
+  background-color: rgb(11, 156, 132);
   color: rgb(255, 254, 253);
 }
 
 .texts button:hover {
-  background-color: rgba(0, 255, 153, 0.089);
-  color: rgb(255, 254, 253);
+  border: 1px solid rgb(0, 255, 153);
+  color: rgba(255, 254, 253, 0.671);
 }
 
 .most {
   border: 2px solid aquamarine;
   position: relative;
+  background-color: rgb(33, 33, 46) !important;
 }
 
 .most em {

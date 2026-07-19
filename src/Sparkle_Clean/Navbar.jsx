@@ -1,17 +1,18 @@
 import "./Sparkle_Clean.css/Navbar.css";
 import Context from "./ContextData";
 import { data } from "./ContextData";
-import logo from "../assets/logo.svg";
+import logoLight from "../assets/logo-light.svg";
+import logoDark from "../assets/logo-dark.svg";
 
 function Navbar() {
-  const { changeTheme, theem } = data();
+  const { changeTheme, theme } = data();
   return (
     <>
       <nav className=" navbar navbar-expand-lg sticky-top navbar-dark pt-0 mt-0">
         <div className="container-fluid py-3 px-3">
           <a href="#home" className=" navbar-brand nav-link">
             <img
-              src="https://sparkleclean-colorlib.pages.dev/assets/img/logo-light.svg"
+              src={logoLight}
               className=" img-fluid object-fit-cover"
               style={{ width: 210 }}
             />
@@ -52,22 +53,40 @@ function Navbar() {
 
             <div className="btns">
               <button onClick={changeTheme} className=" px-2 py-0 i-mode">
-                <svg
-                  className="hidden h-5 w-5 dark:block"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  color="white"
-                  width={25}
-                >
-                  {" "}
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  ></path>
-                </svg>
+                {theme === "dark" ? (
+                  <svg
+                    className="hidden h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    color="white"
+                    width={25}
+                  >
+                    {" "}
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                    ></path>
+                  </svg>
+                ) : (
+                  <svg
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    width={25}
+                    color="white"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                    ></path>
+                  </svg>
+                )}
               </button>
               <button
                 className=" btn px-3 py-1 text-white btn-secondary"

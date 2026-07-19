@@ -3,7 +3,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 const Data = createContext();
 
 export default function ContextData({ children }) {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 
   const changeTheme = () => {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
