@@ -1,0 +1,144 @@
+.header-about {
+  background-color: rgb(3, 126, 95);
+  margin: 0 !important;
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.row-about {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.header-about h1 {
+  color: white;
+  font-family: cursive !important;
+  margin-bottom: 20px;
+}
+
+.header-about p {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.breadcrumb-div {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-div nav > ol,
+li {
+  font-weight: 700;
+}
+
+.container-about {
+  padding: 100px 50px !important;
+  margin: 10px auto;
+}
+
+.col-texts span {
+  color: rgb(8, 236, 236);
+  background-color: rgba(0, 255, 255, 0.171);
+  padding: 5px 1rem;
+  border-radius: 20px;
+}
+
+.col-texts h2 {
+  color: white;
+  font-size: 40px;
+  font-family: monospace;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.col-texts b {
+  color: rgba(1, 214, 214, 0.87);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.col-texts p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.589);
+  font-weight: 500;
+}
+
+.col-img img {
+  max-height: 600px;
+  height: 450px;
+  border-radius: 20px;
+  box-sizing: border-box !important;
+  @media (max-width: 768px) {
+    height: auto !important;
+    width: 100% !important;
+    margin-top: 30px;
+  }
+}
+
+.container-cards {
+  padding: 100px 50px;
+  background-color: rgb(19, 19, 32);
+}
+
+.title-cards {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.title-cards h1 {
+  font-size: 40px !important;
+}
+
+.title-cards p {
+  color: rgba(255, 255, 255, 0.678);
+  font-size: 18px;
+}
+
+.team {
+  padding: 150px 50px;
+  margin: 10px auto;
+}
+
+.div img {
+  border-radius: 999px;
+  object-fit: cover;
+  width: 160px;
+}
+
+.row-team {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.div div h5 {
+  font-family: monospace;
+  margin-top: 15px;
+}
+
+.div div p {
+  color: rgba(255, 255, 255, 0.596);
+}
+
+.title-team {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.cleaner-home {
+  background: linear-gradient(135deg, #045047, #0f766e);
+  text-align: center;
+  padding: 50px 20px;
+  margin-bottom: 90px;
+}
+
+.cleaner-home .buttons {
+  margin-top: 40px;
+}

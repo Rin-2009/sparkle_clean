@@ -14,7 +14,7 @@ function Pricing() {
             </p>
           </div>
           <div className=" row gx-4 gy-4">
-            <div className="col-md-6 col-lg-3 col-sm-12">
+            <div className="col-md-6 col-xl-3 col-lg-6 col-sm-12">
               <div className="texts card">
                 <span>Basic</span>
                 <p>Regular maintenance cleaning</p>
@@ -140,7 +140,7 @@ function Pricing() {
               </div>
             </div>
 
-            <div className="col-md-6 col-lg-3 col-sm-12">
+            <div className="col-md-6 col-xl-3 col-lg-6  col-sm-12">
               <div className="texts most card">
                 <em>Most Popular</em>
                 <span>Standard</span>
@@ -267,7 +267,7 @@ function Pricing() {
               </div>
             </div>
 
-            <div className="col-md-6 col-lg-3 col-sm-12">
+            <div className="col-md-6 col-xl-3 col-lg-6  col-sm-12">
               <div className="texts card">
                 <span>Premium</span>
                 <p>Complete top-to-bottom service</p>
@@ -393,7 +393,7 @@ function Pricing() {
               </div>
             </div>
 
-            <div className="col-md-6 col-lg-3 col-sm-12">
+            <div className="col-md-6 col-xl-3 col-lg-6  col-sm-12">
               <div className="texts card">
                 <span>Commercial</span>
                 <p>Tailored to your business</p>

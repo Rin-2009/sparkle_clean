@@ -92,7 +92,7 @@ function Reviews() {
           <div className="row justify-content-center g-4">
             {visibleCards.map((item) => (
               <div
-                className="col-xl-4 col-lg-4 col-md-6 col-sm-10 col-12"
+                className="col-xl-4 col-lg-6  col-md-6 col-sm-10 col-12"
                 key={item.id}
               >
                 <div className="review-card h-100">

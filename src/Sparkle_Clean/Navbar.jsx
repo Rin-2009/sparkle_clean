@@ -3,6 +3,7 @@ import Context from "./ContextData";
 import { data } from "./ContextData";
 import logoLight from "../assets/logo-light.svg";
 import logoDark from "../assets/logo-dark.svg";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const { changeTheme, theme } = data();
@@ -31,24 +32,24 @@ function Navbar() {
 
           <div className=" collapse navbar-collapse" id="nav">
             <div className="nav-list mx-auto list text-center align-items-center d-flex gap-5 align-items-center">
-              <a href="#home" className=" nav-link">
+              <Link to={"/"} className=" nav-link">
                 Home
-              </a>
-              <a href="#about" className=" nav-link">
+              </Link>
+              <Link to={"/pageAbout"} className=" nav-link">
                 About
-              </a>
-              <a href="#services" className=" nav-link">
+              </Link>
+              <Link to={"/pageServices"} className=" nav-link">
                 Services
-              </a>
-              <a href="#pricing" className=" nav-link">
+              </Link>
+              <Link to={"/pagePricing"} className=" nav-link">
                 Pricing
-              </a>
-              <a href="#blog" className=" nav-link">
+              </Link>
+              <Link to={"/blog"} className=" nav-link">
                 Blog
-              </a>
-              <a href="#contact" className=" nav-link">
+              </Link>
+              <Link to={"/pageContact"} className=" nav-link">
                 Contact
-              </a>
+              </Link>
             </div>
 
             <div className="btns">

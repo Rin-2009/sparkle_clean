@@ -2,15 +2,21 @@ import "./Sparkle_Clean.css/Sparkle_Clean.css";
 import Context from "./ContextData";
 import Navbar from "./Navbar";
 import Home from "./Home";
-
+import PageAbout from "./PageAbout";
+import PageServices from "./PageServices";
+import PagrPricing from "./PagePricing";
+import { Routes, Route } from "react-router-dom";
 function Sparkle_Clean() {
   return (
-    <>
-      <Context>
-        <Navbar />
-        <Home />
-      </Context>
-    </>
+    <Context>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/pageAbout" element={<PageAbout />} />
+        <Route path="/pageServices" element={<PageServices />} />
+        <Route path="/pagePricing" element={<PagrPricing />} />
+      </Routes>
+    </Context>
   );
 }
 

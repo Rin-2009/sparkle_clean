@@ -1,0 +1,43 @@
+.header-services {
+  background-color: rgb(3, 126, 95);
+  margin: 0 !important;
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.how-it-works {
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.title-hiw {
+  margin-bottom: 100px;
+}
+
+.title-hiw h1 {
+  font-size: 40px;
+}
+
+.title-hiw p {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.644);
+}
+
+.row-hiw > div > span {
+  background-color: rgb(4, 126, 126);
+  padding: 16px 23px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 19px !important;
+}
+
+.row-hiw > div > h4 {
+  margin-top: 20px;
+}
+
+.row-hiw > div > p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.596);
+}
