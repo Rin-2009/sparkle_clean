@@ -1,0 +1,280 @@
+.header-blog {
+  background: linear-gradient(rgba(26, 233, 164, 0.856), rgba(0, 0, 0, 0.459));
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.header-blog span {
+  background-color: rgba(5, 31, 21, 0.329);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: rgb(113, 221, 170);
+  font-weight: 600;
+  font-family: monospace;
+  font-size: 19px;
+}
+
+.header-blog h1 {
+  margin-top: 30px;
+  font-size: 40px;
+  font-family: monospace;
+  margin-bottom: 20px;
+}
+
+.header-blog p {
+  color: rgba(255, 255, 255, 0.658);
+  max-width: 700px;
+  margin: auto;
+}
+
+.header-blog li:nth-child(1) {
+  color: rgb(4, 151, 151) !important;
+}
+
+.container-blog {
+  padding: 100px 50px;
+}
+
+.div-blog {
+  padding: 10px !important;
+}
+
+.main-img {
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.main-img img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.div-blog:hover .main-img img {
+  transform: scale(1.07);
+}
+
+.card-blog {
+  background-color: rgb(19, 19, 37);
+  color: white;
+  padding: 30px;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 20px 20px;
+}
+
+.spans {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.spans b {
+  color: rgba(2, 196, 196, 0.911);
+  background: rgba(0, 255, 255, 0.199);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 400;
+}
+
+.spans span {
+  color: rgba(255, 255, 255, 0.493);
+  font-family: monospace;
+}
+
+.card-blog h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: rgb(236, 236, 236);
+}
+
+.card-blog p {
+  color: rgba(255, 255, 255, 0.664);
+  flex: 1;
+}
+
+.commit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.commit img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.commit h6 {
+  color: rgba(8, 223, 223, 0.664);
+  font-size: 13px;
+  margin: 0;
+}
+
+.commit p {
+  color: rgba(255, 255, 255, 0.664);
+  font-size: 11px;
+  margin: 0;
+}
+
+@media (max-width: 812px) {
+  .header-blog {
+    padding: 70px 20px;
+  }
+
+  .header-blog h1 {
+    font-size: 30px;
+  }
+
+  .container-blog {
+    padding: 70px 20px;
+  }
+}
+
+.search-and-filter {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 750px;
+  text-align: center;
+}
+
+.search-box input {
+  height: 55px;
+  border-radius: 50px;
+  background: #11111d;
+  border: 2px solid rgba(0, 255, 208, 0.2);
+  color: white;
+  padding: 0 25px;
+  transition: 0.3s;
+}
+
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.search-box input:focus {
+  background: #11111d;
+  color: white;
+  border-color: #00ffd0;
+  box-shadow: 0 0 15px rgba(0, 255, 208, 0.2);
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  border: 1px solid #00ffd0;
+  background: transparent;
+  color: #00ffd0;
+  padding: 10px 28px;
+  border-radius: 50px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.filter-buttons button:hover {
+  background: #00ffd0;
+  color: #11111d;
+  transform: translateY(-3px);
+}
+
+.filter-buttons button:focus {
+  background: #00ffd0;
+  color: #11111d;
+}
+
+@media (max-width: 768px) {
+  .search-and-filter {
+    margin: 50px 20px;
+  }
+
+  .filter-buttons {
+    gap: 10px;
+  }
+
+  .filter-buttons button {
+    width: 100%;
+  }
+}
+
+.form-card {
+  padding: 20px;
+}
+
+.card-form {
+  margin: 100px auto;
+  width: 700px;
+  padding: 40px;
+  background-color: #11111d;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+@media (max-width: 812px) {
+  .card-form {
+    width: 100%;
+  }
+  .form-card {
+    padding: 40px;
+  }
+}
+
+.card-form span {
+  background-color: #08ebc14b;
+  color: #00ffd0;
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+
+.card-form h1 {
+  font-family: monospace;
+  margin-top: 15px;
+}
+
+.card-form p {
+  color: rgba(255, 255, 255, 0.664);
+  margin-bottom: 40px;
+}
+
+.form {
+  display: flex !important;
+  align-items: center;
+  gap: 20px;
+}
+
+.form input {
+  border: 2px solid rgb(3, 143, 143);
+  background-color: black;
+  border-radius: 30px;
+}
+
+.form input::placeholder {
+  color: #00ffd079;
+}
+
+.form button {
+  background: linear-gradient(rgb(7, 197, 156), #11111d0e);
+  border: 0;
+  padding: 8px 10px;
+  color: rgba(255, 255, 255, 0.781);
+  font-family: monospace;
+  border-radius: 20px;
+}
