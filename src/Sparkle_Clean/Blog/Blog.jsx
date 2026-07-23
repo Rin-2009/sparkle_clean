@@ -3,114 +3,29 @@ import "../Sparkle_Clean.css/Footer.css";
 import logoLight from "../Blog/blog_imgs/logo-light.svg";
 import "../Sparkle_Clean.css/Blog.css";
 import { Link } from "react-router-dom";
-import img1 from "../Blog/blog_imgs/sparkle_img1.png";
-import img2 from "../Blog/blog_imgs/sparkle_img2.png";
-import img3 from "../Blog/blog_imgs/sparkle_img3.png";
-import img4 from "../Blog/blog_imgs/sparkle_img4.png";
-import img5 from "../Blog/blog_imgs/sparkle_img5.png";
-import img6 from "../Blog/blog_imgs/sparkle_img6.png";
-import S1 from "../Blog/blog_imgs/S1.png";
-import S2 from "../Blog/blog_imgs/S2.png";
-import S3 from "../Blog/blog_imgs/S3.png";
-import S4 from "../Blog/blog_imgs/S4.png";
-
-const articles = [
-  {
-    id: 1,
-    image: img1,
-    category: "Tips",
-    date: "February 18, 2026",
-    title: "5 Surprising Benefits of Professional Cleaning Services",
-    description:
-      "Beyond a clean home, professional cleaning offers health benefits, time savings, and even financial returns you might not expect.",
-    author: "Carlos Rivera",
-    img: S1,
-    readTime: "6 min read",
-  },
-  {
-    id: 2,
-    image: img2,
-    category: "Tips",
-    date: "February 3, 2026",
-    title: "10 Eco-Friendly Cleaning Tips That Actually Work",
-    description:
-      "Discover natural cleaning solutions using everyday household items. Better for your health, your family, and the environment.",
-    author: "Aisha Patel",
-    img: S2,
-    readTime: "6 min read",
-  },
-  {
-    id: 3,
-    image: img3,
-    category: "Guide",
-    date: "January 28, 2026",
-    title: "The Complete Guide to Cleaning Before Moving",
-    description:
-      "Whether moving in or out, this guide covers everything you need to know about pre-move cleaning to protect your deposit and start fresh.",
-    author: "James Cooper",
-    img: S3,
-    readTime: "7 min read",
-  },
-  {
-    id: 4,
-    image: img4,
-    category: "Guide",
-    date: "January 15, 2026",
-    title: "The Ultimate Spring Cleaning Checklist for Every Room",
-    description:
-      "A comprehensive room-by-room guide to deep cleaning your home this spring. From kitchen to bathroom, we cover every detail.",
-    author: "Maria Vasquez",
-    img: S4,
-    readTime: "8 min read",
-  },
-  {
-    id: 5,
-    image: img5,
-    category: "Guide",
-    date: "December 10, 2025",
-    title: "How Often Should You Deep Clean Your Home?",
-    description:
-      "A practical guide to deep cleaning frequency for every room. Learn the ideal schedule based on your household size and lifestyle.",
-    author: "James Cooper",
-    img: S2,
-    readTime: "7 min read",
-  },
-  {
-    id: 6,
-    image: img6,
-    category: "Lifestyle",
-    date: "November 22, 2025",
-    title: "7 Organizing Tips for a Clutter-Free Home",
-    description:
-      "Simple decluttering strategies that professional organizers swear by. Transform your space with these practical methods.",
-    author: "Maria Vasquez",
-    img: S2,
-    readTime: "5 min read",
-  },
-];
+import { articles } from "./articlesData";
 
 function Blog() {
   const [filter, setFilter] = useState("All");
 
   const filters =
     filter === "All" ? articles : articles.filter((i) => i.category === filter);
-
   return (
     <>
       <section>
         <div className="header-blog">
-          <span>Our Blog</span>
-          <h1>Cleaning Tips & Insights</h1>
-          <p>
+          <span className="hidden-up">Our Blog</span>
+          <h1 className="hidden-up">Cleaning Tips & Insights</h1>
+          <p className="hidden-up">
             Stay up to date with the latest cleaning tips, home care guides, and
             industry insights from our team.
           </p>
 
-          <div className="breadcrumb-div">
+          <div className="breadcrumb-div hidden-up">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb">
                 <li className="breadcrumb-item">
-                  <Link to="/" className=" nav-link">
+                  <Link to="/" className=" nav-link text-decoration-none">
                     Home
                   </Link>
                 </li>
@@ -128,7 +43,7 @@ function Blog() {
 
         <section>
           <div className="container-fluid container-blog">
-            <div className="search-and-filter">
+            <div className="search-and-filter hidden-up">
               <div className="search-box">
                 <form>
                   <input
@@ -149,14 +64,14 @@ function Blog() {
               </div>
             </div>
 
-            <div className="row g-4">
+            <div className="row g-4 hidden-up">
               {filters.map((item) => (
                 <div
                   className="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"
                   key={item.id}
                 >
                   <Link
-                    to={`/${item.id}`}
+                    to={item.link}
                     className="text-decoration-none text-light"
                   >
                     <div className="div-blog">
@@ -193,11 +108,10 @@ function Blog() {
               ))}
             </div>
           </div>
-          ;
         </section>
       </section>
 
-      <section className="form-card">
+      <section className="form-card hidden-up">
         <div className=" card-form card">
           <span>Newsletter</span>
           <h1>Stay in the Loop</h1>

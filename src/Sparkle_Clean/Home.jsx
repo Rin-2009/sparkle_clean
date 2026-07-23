@@ -71,10 +71,10 @@ function Home() {
 
   return (
     <>
-      <section className=" home">
+      <section className=" home p-sm-5">
         <div className=" container-xxl">
           <div className=" row g-5">
-            <div className=" col-md-12 col-lg-6 col-sm-12 c-1">
+            <div className=" col-md-12 col-lg-6 col-sm-12 c-1 hidden-up">
               <span className="span-dot mb-5 ps-5">
                 <span className="dot"></span> Instant Quote
               </span>
@@ -120,7 +120,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-md-12 col-lg-6 col-sm-12 c-2 mt-0">
+            <div className="col-md-12 col-lg-6 col-sm-12 c-2 mt-0 hidden-up">
               <div
                 className=" card p-4 rounded-4"
                 style={{ background: "#0d0d1dee" }}
@@ -240,7 +240,7 @@ function Home() {
       {/* قسم الميزات والضمانات المتجاوب */}
       <section className=" badges text-white py-5">
         <div className="container">
-          <div className="row g-4 justify-content-center">
+          <div className="row g-4 justify-content-center hidden-up">
             <div className="col-12 col-sm-6 col-md-3 text-center px-3">
               <div className="mb-3 d-flex justify-content-center">
                 <div
@@ -389,7 +389,7 @@ function Home() {
       </section>
 
       <section>
-        <div className="numbers">
+        <div className="numbers hidden-up">
           <div className="">
             <h3>5000+</h3>
             <p>Homes Cleaned</p>

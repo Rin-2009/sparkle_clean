@@ -105,3 +105,19 @@
   font-family: monospace;
   text-align: center;
 }
+
+body.light .results span {
+  color: #012413;
+}
+
+body.light .results .title-results h1 {
+  color: #000000;
+}
+
+body.light .results h2 {
+  color: #ffffff;
+}
+
+body.light .results p {
+  color: #000000d7;
+}

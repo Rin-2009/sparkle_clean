@@ -12,13 +12,13 @@ function PageAbout() {
     <>
       <section className="pageAbout">
         <div className="header-about">
-          <h1>About SparkleClean</h1>
-          <p>
+          <h1 className="hidden-up">About SparkleClean</h1>
+          <p className="hidden-up">
             Austin's trusted cleaning professionals since 2018. Insured, bonded,
             and eco-friendly
           </p>
 
-          <div className="breadcrumb-div">
+          <div className="breadcrumb-div hidden-up">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb">
                 <li className="breadcrumb-item">
@@ -36,7 +36,7 @@ function PageAbout() {
         </div>
 
         <div className=" container-xxl container-about">
-          <div className="row gx-5  row-about">
+          <div className="row gx-5  row-about hidden-up">
             <div className=" col-md-12 col-sm-12 col-lg-6 col-xl-6 ">
               <div className="col-texts">
                 <span>Our Story</span>
@@ -69,7 +69,7 @@ function PageAbout() {
           </div>
         </div>
 
-        <section className="cards-about">
+        <section className="cards-about hidden-up">
           <div className=" container-xxl container-cards">
             <div className=" title-cards">
               <h1>Our Core Values</h1>
@@ -159,7 +159,7 @@ function PageAbout() {
           </div>
         </section>
 
-        <section className="team">
+        <section className="team hidden-up">
           <div className="container-xxl">
             <div className="title-team">
               <h1>Meet Our Team</h1>
@@ -209,7 +209,7 @@ function PageAbout() {
           </div>
         </section>
 
-        <section className="cleaner-home">
+        <section className="cleaner-home hidden-up">
           <div className="container">
             <h1>Ready for a Cleaner Home?</h1>
 

@@ -48,3 +48,14 @@
   color: rgba(255, 255, 255, 0.692);
   font-size: 14px;
 }
+
+body.light .services span {
+  color: rgb(44, 90, 90) !important;
+}
+
+body.light .services .card-service {
+  background: linear-gradient(
+    rgba(1, 44, 23, 0.918),
+    rgb(59, 59, 59)
+  ) !important;
+}

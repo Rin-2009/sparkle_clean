@@ -31,21 +31,21 @@ export default function Results() {
     <section className="results">
       <div className="container-lg">
         <div className="title-results">
-          <span>Results</span>
-          <h1>See the Difference</h1>
-          <p>
+          <span className="hidden-up">Results</span>
+          <h1 className="hidden-up">See the Difference</h1>
+          <p className="hidden-up">
             Real results from our cleaning professionals that showcase the
             quality of our work.
           </p>
         </div>
         <div className="row gy-4">
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-xl-6 col-sm-12 col-md-12 col-xxl-6 hidden-up">
             <div className="text">
               <h2>Kitchen Deep Clean</h2>
               <CompareCard className=" position-relative" />
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-xl-6 col-xxl-6 col-sm-12 col-md-12 hidden-up">
             <div className="text">
               <h2>Bathroom Restoration</h2>
               <CompareCard />

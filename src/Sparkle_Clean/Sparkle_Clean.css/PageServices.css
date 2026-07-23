@@ -41,3 +41,19 @@
   font-size: 13px;
   color: rgba(255, 255, 255, 0.596);
 }
+
+body.light .header-services h1 {
+  color: beige !important;
+}
+
+body.light .header-services p {
+  color: beige !important;
+}
+
+body.light .title-hiw p {
+  color: rgb(0, 0, 0) !important;
+}
+
+body.light .how-it-works p {
+  color: rgb(0, 0, 0) !important;
+}

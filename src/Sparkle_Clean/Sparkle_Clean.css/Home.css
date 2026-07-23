@@ -412,3 +412,17 @@ body {
 .numbers div p {
   font-size: 13px;
 }
+
+body.light .badges svg {
+  color: rgb(19, 145, 80) !important;
+}
+
+body.light .badges p {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 500;
+}
+
+body.light .badges h6 {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 500;
+}

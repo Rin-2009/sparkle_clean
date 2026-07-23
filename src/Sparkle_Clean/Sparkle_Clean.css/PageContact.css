@@ -30,3 +30,11 @@
     margin-top: 50px;
   }
 }
+
+body.light .header-contact h1 {
+  color: aliceblue;
+}
+
+body.light .header-contact p {
+  color: aliceblue;
+}

@@ -6,15 +6,15 @@ function Pricing() {
       <section className="pricing" id="pricing">
         <div className=" container-xxl">
           <div className="titles-pricing mb-5">
-            <span>Packages</span>
-            <h1>Choose Your Clean</h1>
-            <p>
+            <span className="hidden-up">Packages</span>
+            <h1 className="hidden-up">Choose Your Clean</h1>
+            <p className="hidden-up">
               Transparent pricing with no hidden fees. Pick the package that
               fits your needs and budget.
             </p>
           </div>
           <div className=" row gx-4 gy-4">
-            <div className="col-md-6 col-xl-3 col-lg-6 col-sm-12">
+            <div className="col-md-6 col-xl-3 col-lg-6 col-sm-12 hidden-up">
               <div className="texts card">
                 <span>Basic</span>
                 <p>Regular maintenance cleaning</p>
@@ -140,7 +140,7 @@ function Pricing() {
               </div>
             </div>
 
-            <div className="col-md-6 col-xl-3 col-lg-6  col-sm-12">
+            <div className="col-md-6 col-xl-3 col-lg-6  col-sm-12 hidden-up">
               <div className="texts most card">
                 <em>Most Popular</em>
                 <span>Standard</span>
@@ -267,7 +267,7 @@ function Pricing() {
               </div>
             </div>
 
-            <div className="col-md-6 col-xl-3 col-lg-6  col-sm-12">
+            <div className="col-md-6 col-xl-3 col-lg-6  col-sm-12 hidden-up">
               <div className="texts card">
                 <span>Premium</span>
                 <p>Complete top-to-bottom service</p>
@@ -393,7 +393,7 @@ function Pricing() {
               </div>
             </div>
 
-            <div className="col-md-6 col-xl-3 col-lg-6  col-sm-12">
+            <div className="col-md-6 col-xl-3 col-lg-6  col-sm-12 hidden-up">
               <div className="texts card">
                 <span>Commercial</span>
                 <p>Tailored to your business</p>

@@ -80,16 +80,16 @@ function Reviews() {
 
         <div className="container">
           <div className="title-reviews">
-            <span>Reviews</span>
+            <span className="hidden-up">Reviews</span>
 
-            <h1>What Our Clients Say</h1>
+            <h1 className="hidden-up">What Our Clients Say</h1>
 
-            <p>
+            <p className="hidden-up">
               Hear from real clients about their experience with SparkleClean.
             </p>
           </div>
 
-          <div className="row justify-content-center g-4">
+          <div className="row justify-content-center g-4 hidden-up">
             {visibleCards.map((item) => (
               <div
                 className="col-xl-4 col-lg-6  col-md-6 col-sm-10 col-12"
@@ -126,7 +126,7 @@ function Reviews() {
       </section>
 
       <section className="SpotlessSpace">
-        <div className="container">
+        <div className="container hidden-up">
           <h1>Ready for a Spotless Space?</h1>
 
           <p>

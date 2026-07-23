@@ -222,3 +222,15 @@
     width: 100%;
   }
 }
+
+body.light .reviews .title-reviews span {
+  color: #111827;
+}
+
+body.light .reviews .title-reviews h1 {
+  color: #111827;
+}
+
+body.light .reviews .title-reviews p {
+  color: #111827;
+}

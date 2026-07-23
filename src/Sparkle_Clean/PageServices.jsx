@@ -9,13 +9,13 @@ function PageServices() {
     <>
       <section>
         <div className="header-services">
-          <h1>Our Services</h1>
-          <p>
+          <h1 className="hidden-up">Our Services</h1>
+          <p className="hidden-up">
             Professional cleaning solutions for homes, offices, and everything
             in between.
           </p>
 
-          <div className="breadcrumb-div">
+          <div className="breadcrumb-div hidden-up">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb">
                 <li className="breadcrumb-item">
@@ -35,9 +35,9 @@ function PageServices() {
 
       <section className="services" id="services">
         <div className="titles-services mb-5">
-          <span>Our Services</span>
-          <h1>Complete Cleaning Solutions</h1>
-          <p>
+          <span className="hidden-up">Our Services</span>
+          <h1 className="hidden-up">Complete Cleaning Solutions</h1>
+          <p className="hidden-up">
             From regular home maintenance to specialized commercial cleaning, we
             provide the full spectrum of professional cleaning services.
           </p>
@@ -45,7 +45,7 @@ function PageServices() {
 
         <div className=" container-xxl">
           <div className=" row gx-4 gy-5 row-services">
-            <div className=" col-md-6 col-lg-4 col-sm-12">
+            <div className=" col-md-6 col-lg-4 col-sm-12 hidden-up">
               <div className="card-service card">
                 <svg
                   className="h-7 w-7"
@@ -78,7 +78,7 @@ function PageServices() {
               </div>
             </div>
 
-            <div className=" col-md-6 col-lg-4 col-sm-12">
+            <div className=" col-md-6 col-lg-4 col-sm-12 hidden-up">
               <div className="card-service card">
                 <svg
                   className="h-7 w-7"
@@ -105,7 +105,7 @@ function PageServices() {
               </div>
             </div>
 
-            <div className=" col-md-6 col-lg-4 col-sm-12">
+            <div className=" col-md-6 col-lg-4 col-sm-12 hidden-up">
               <div className="card-service card">
                 <svg
                   className="h-7 w-7"
@@ -132,7 +132,7 @@ function PageServices() {
               </div>
             </div>
 
-            <div className=" col-md-6 col-lg-4 col-sm-12">
+            <div className=" col-md-6 col-lg-4 col-sm-12 hidden-up">
               <div className="card-service card">
                 <svg
                   fill="none"
@@ -158,7 +158,7 @@ function PageServices() {
               </div>
             </div>
 
-            <div className=" col-md-6 col-lg-4 col-sm-12">
+            <div className=" col-md-6 col-lg-4 col-sm-12 hidden-up">
               <div className="card-service card">
                 <svg
                   fill="none"
@@ -184,7 +184,7 @@ function PageServices() {
               </div>
             </div>
 
-            <div className=" col-md-6 col-lg-4 col-sm-12">
+            <div className=" col-md-6 col-lg-4 col-sm-12 hidden-up">
               <div className="card-service card">
                 <svg
                   fill="none"
@@ -213,7 +213,7 @@ function PageServices() {
         </div>
       </section>
 
-      <section className="how-it-works">
+      <section className="how-it-works hidden-up">
         <div className=" container-xxl">
           <div className=" title-hiw">
             <h1>How It Works</h1>
@@ -259,7 +259,7 @@ function PageServices() {
         </div>
       </section>
 
-      <section className="cleaner-home">
+      <section className="cleaner-home hidden-up">
         <div className="container">
           <h1>Ready for a Spotless Space?</h1>
 

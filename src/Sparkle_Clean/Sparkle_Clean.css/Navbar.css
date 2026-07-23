@@ -3,7 +3,6 @@
   border-bottom: 1px solid rgb(68, 68, 68);
 }
 
-
 .nav-list {
   line-height: 3;
   @media (max-width: 768px) {
@@ -11,8 +10,8 @@
   }
 }
 
-.nav-list a {
-  color: #c7c6c6 !important;
+.dropdown-menu li {
+  color: black !important;
 }
 
 .nav-list a:hover {

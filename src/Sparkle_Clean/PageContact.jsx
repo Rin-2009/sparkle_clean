@@ -14,13 +14,13 @@ function PageContact() {
   return (
     <>
       <div className="header-contact">
-        <h1>Contact Us</h1>
-        <p>
+        <h1 className="hidden-up">Contact Us</h1>
+        <p className="hidden-up">
           Ready for a cleaner space? Reach out and we will get back to you
           within 2 hours.
         </p>
 
-        <div className="breadcrumb-div">
+        <div className="breadcrumb-div hidden-up">
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
               <li className="breadcrumb-item">
@@ -37,7 +37,7 @@ function PageContact() {
         </div>
       </div>
 
-      <section className="contact section-padding" id="contact">
+      <section className="contact section-padding hidden-up" id="contact">
         <div className="container-xxl con-con">
           <div className="contact-title">
             <span>Contact</span>

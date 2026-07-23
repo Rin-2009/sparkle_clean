@@ -40,19 +40,21 @@ function FAQ() {
     <>
       <section className="faq">
         <div className=" title-FAQ">
-          <span>FAQ</span>
-          <h1>Frequently Asked Questions</h1>
-          <p>Find answers to common questions about our cleaning services.</p>
+          <span className="hidden-up">FAQ</span>
+          <h1 className="hidden-up">Frequently Asked Questions</h1>
+          <p className="hidden-up">
+            Find answers to common questions about our cleaning services.
+          </p>
         </div>
 
         <div>
           {faqData.map((item) => (
-            <div className="faq-item" key={item.id}>
+            <div className="faq-item hidden-up" key={item.id}>
               <div
                 className="faq-header"
                 onClick={() => setOpen(open === item.id ? null : item.id)}
               >
-                <h5>{item.question}</h5>
+                <h5 className="question">{item.question}</h5>
                 <span>{open === item.id ? "×" : "+"}</span>
               </div>
 

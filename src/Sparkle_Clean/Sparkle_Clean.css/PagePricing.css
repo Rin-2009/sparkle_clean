@@ -114,3 +114,21 @@
 .block small {
   font-size: 14px;
 }
+
+body.light .header-pricing h1 {
+  color: aliceblue;
+}
+
+body.light .header-pricing p {
+  color: aliceblue;
+}
+
+body.light .title-pricing span {
+  color: rgb(8, 31, 51);
+}
+
+body.light .title-pricing p {
+  color: rgb(8, 31, 51);
+}
+
+

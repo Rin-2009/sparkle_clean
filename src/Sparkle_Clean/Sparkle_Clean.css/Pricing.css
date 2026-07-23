@@ -107,3 +107,11 @@
 .block small {
   font-size: 14px;
 }
+
+body.light .pricing span {
+  color: rgb(5, 133, 133) !important;
+}
+
+body.light .pricing .titles-pricing p {
+  color: rgb(0, 0, 0) !important;
+}

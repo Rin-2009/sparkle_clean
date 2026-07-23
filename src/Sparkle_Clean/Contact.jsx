@@ -8,18 +8,18 @@ import {
 
 function Contact() {
   return (
-    <section className="contact section-padding" id="contact">
+    <section className="contact section-padding px-sm-5" id="contact">
       <div className="container">
         <div className="contact-title">
-          <span>Contact</span>
-          <h2>Get in Touch</h2>
-          <p>
+          <span className="hidden-up">Contact</span>
+          <h2 className="hidden-up">Get in Touch</h2>
+          <p className="hidden-up">
             Ready for a cleaner space? Book your cleaning or ask us a question.
           </p>
         </div>
 
         <div className="contact-content">
-          <div className="contact-form">
+          <div className="contact-form hidden-up">
             <div className="input-row">
               <div className="input-box">
                 <label>Full Name</label>
@@ -69,7 +69,7 @@ function Contact() {
             <button>Request Cleaning</button>
           </div>
 
-          <div className="contact-info">
+          <div className="contact-info hidden-up">
             <div className="info-box">
               <div className="icon">
                 <FaMapMarkerAlt />
@@ -132,7 +132,7 @@ function Contact() {
               </div>
             </div>
 
-            <div className="map-box">
+            <div className="map-box hidden-up">
               <FaMapMarkerAlt className="map-icon" />
 
               <p>Interactive map coming soon</p>

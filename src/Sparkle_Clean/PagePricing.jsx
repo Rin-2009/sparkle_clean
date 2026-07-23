@@ -44,13 +44,13 @@ function PagrPricing() {
     <>
       <section>
         <div className="header-pricing">
-          <h1>Pricing</h1>
-          <p>
+          <h1 className="hidden-up">Pricing</h1>
+          <p className="hidden-up">
             Transparent pricing with no hidden fees. Choose the plan that fits
             your needs.
           </p>
 
-          <div className="breadcrumb-div">
+          <div className="breadcrumb-div hidden-up">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb">
                 <li className="breadcrumb-item">
@@ -70,15 +70,15 @@ function PagrPricing() {
         <section className="pagePricing" id="pricing">
           <div className=" container-xxl">
             <div className="title-pricing mb-5">
-              <span>Pricing</span>
-              <h1>Simple, Transparent Pricing</h1>
-              <p>
+              <span className="hidden-up">Pricing</span>
+              <h1 className="hidden-up">Simple, Transparent Pricing</h1>
+              <p className="hidden-up">
                 Every plan includes eco-friendly products, insured cleaners, and
                 our satisfaction
               </p>
             </div>
             <div className=" row gx-4 gy-4">
-              <div className="col-md-6 col-xl-4 col-lg-6 col-sm-12">
+              <div className="col-md-6 col-xl-4 col-lg-6 col-sm-12 hidden-up">
                 <div className="texts-1 card">
                   <span>Basic</span>
                   <p>Regular maintenance cleaning</p>
@@ -204,7 +204,7 @@ function PagrPricing() {
                 </div>
               </div>
 
-              <div className="col-md-6 col-xl-4 col-lg-6  col-sm-12">
+              <div className="col-md-6 col-xl-4 col-lg-6  col-sm-12 hidden-up">
                 <div className="texts-1 most card">
                   <em>Most Popular</em>
                   <span>Standard</span>
@@ -331,7 +331,7 @@ function PagrPricing() {
                 </div>
               </div>
 
-              <div className="col-md-6 col-xl-4 col-lg-6  col-sm-12">
+              <div className="col-md-6 col-xl-4 col-lg-6  col-sm-12 hidden-up">
                 <div className="texts-1 card">
                   <span>Premium</span>
                   <p>Complete top-to-bottom service</p>
@@ -463,19 +463,21 @@ function PagrPricing() {
 
       <section className="faq">
         <div className=" title-FAQ">
-          <span>FAQ</span>
-          <h1>Frequently Asked Questions</h1>
-          <p>Find answers to common questions about our cleaning services.</p>
+          <span className="hidden-up">FAQ</span>
+          <h1 className="hidden-up">Frequently Asked Questions</h1>
+          <p className="hidden-up">
+            Find answers to common questions about our cleaning services.
+          </p>
         </div>
 
         <div>
           {faqData.map((item) => (
-            <div className="faq-item" key={item.id}>
+            <div className="faq-item hidden-up" key={item.id}>
               <div
                 className="faq-header"
                 onClick={() => setOpen(open === item.id ? null : item.id)}
               >
-                <h5>{item.question}</h5>
+                <h5 className="question">{item.question}</h5>
                 <span>{open === item.id ? "×" : "+"}</span>
               </div>
 
@@ -487,14 +489,14 @@ function PagrPricing() {
 
       <section className="cleaner-home">
         <div className="container">
-          <h1>Need a Custom Quote?</h1>
+          <h1 className="hidden-up">Need a Custom Quote?</h1>
 
-          <p>
+          <p className="hidden-up">
             Every space is unique. Contact us for a personalized quote tailored
             to your specific needs..
           </p>
 
-          <div className="buttons">
+          <div className="buttons hidden-up">
             <button>
               Get Free Quote
               <i className="fa-solid fa-arrow-right-long ms-2"></i>

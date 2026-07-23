@@ -142,3 +142,34 @@ li {
 .cleaner-home .buttons {
   margin-top: 40px;
 }
+
+body.light .container-about p {
+  color: rgba(9, 9, 15, 0.945);
+}
+body.light .container-about b {
+  color: rgba(3, 31, 27, 0.945);
+}
+
+body.light .container-about h2 {
+  color: rgba(1, 1, 15, 0.945);
+}
+
+body.light .container-about span {
+  color: rgba(1, 1, 15, 0.945);
+}
+
+body.light .cards-about h1 {
+  color: rgba(240, 240, 248, 0.945) !important;
+}
+
+body.light .team p {
+  color: rgba(0, 0, 0, 0.945) !important;
+}
+
+body.light .cleaner-home h1 {
+  color: rgba(240, 240, 248, 0.945) !important;
+}
+
+body.light .cleaner-home p {
+  color: rgba(240, 240, 248, 0.945) !important;
+}

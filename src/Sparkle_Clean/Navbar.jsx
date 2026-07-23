@@ -44,8 +44,34 @@ function Navbar() {
               <Link to={"/pagePricing"} className=" nav-link">
                 Pricing
               </Link>
-              <Link to={"/blog"} className=" nav-link">
-                Blog
+              <Link className="nav-item dropdown nav-link">
+                <a
+                  href="#"
+                  className="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  Blog
+                </a>
+
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link className="dropdown-item" to="/blog">
+                      Blog
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link className="dropdown-item" to="/cleaningChecklist">
+                      Cleaning CheckList
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link className="dropdown-item" to="/service_areas">
+                      Service Areas
+                    </Link>
+                  </li>
+                </ul>
               </Link>
               <Link to={"/pageContact"} className=" nav-link">
                 Contact

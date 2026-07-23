@@ -5,9 +5,9 @@ function Services() {
     <>
       <section className="services" id="services">
         <div className="titles-services mb-5">
-          <span>Our Services</span>
-          <h1>Cleaning Services for Every Need</h1>
-          <p>
+          <span className="hidden-up">Our Services</span>
+          <h1 className="hidden-up">Cleaning Services for Every Need</h1>
+          <p className="hidden-up">
             From weekly home cleanings to large-scale commercial projects, we
             have the team and expertise to handle it all.
           </p>
@@ -15,7 +15,7 @@ function Services() {
 
         <div className=" container-xxl">
           <div className=" row gx-4 gy-5 row-services">
-            <div className=" col-md-6 col-lg-4 col-sm-12">
+            <div className=" col-md-6 col-lg-4 col-sm-12 hidden-up">
               <div className="card-service card">
                 <svg
                   className="h-7 w-7"
@@ -48,7 +48,7 @@ function Services() {
               </div>
             </div>
 
-            <div className=" col-md-6 col-lg-4 col-sm-12">
+            <div className=" col-md-6 col-lg-4 col-sm-12 hidden-up">
               <div className="card-service card">
                 <svg
                   className="h-7 w-7"
@@ -75,7 +75,7 @@ function Services() {
               </div>
             </div>
 
-            <div className=" col-md-6 col-lg-4 col-sm-12">
+            <div className=" col-md-6 col-lg-4 col-sm-12 hidden-up">
               <div className="card-service card">
                 <svg
                   className="h-7 w-7"
@@ -102,7 +102,7 @@ function Services() {
               </div>
             </div>
 
-            <div className=" col-md-6 col-lg-4 col-sm-12">
+            <div className=" col-md-6 col-lg-4 col-sm-12 hidden-up">
               <div className="card-service card">
                 <svg
                   fill="none"
@@ -128,7 +128,7 @@ function Services() {
               </div>
             </div>
 
-            <div className=" col-md-6 col-lg-4 col-sm-12">
+            <div className=" col-md-6 col-lg-4 col-sm-12 hidden-up">
               <div className="card-service card">
                 <svg
                   fill="none"
@@ -154,7 +154,7 @@ function Services() {
               </div>
             </div>
 
-            <div className=" col-md-6 col-lg-4 col-sm-12">
+            <div className=" col-md-6 col-lg-4 col-sm-12 hidden-up">
               <div className="card-service card">
                 <svg
                   fill="none"

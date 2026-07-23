@@ -11,7 +11,7 @@ body.light {
   color: #111827;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale body;
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(169, 188, 204);
 }
 
 body.light .navbar a {
@@ -27,8 +27,16 @@ body.light .navbar {
 }
 
 body.light section {
-  background-color: aliceblue;
+  background-color: rgb(169, 188, 204);
   margin: 0;
+}
+
+body.light .breadcrumb-div li {
+  color: azure !important;
+}
+
+body.light .dropdown .dropdown-item {
+  color: #0e1b27 !important;
 }
 
 html,
@@ -36,4 +44,40 @@ body {
   overflow-x: hidden !important;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hidden-up,
+.hidden-left,
+.hidden-right {
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+.hidden-up {
+  transform: translateY(70px);
+}
+
+.hidden-left {
+  transform: translateX(-80px);
+}
+
+.hidden-right {
+  transform: translateX(80px);
+}
+
+.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
